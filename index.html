@@ -31,11 +31,29 @@
             </div>
             <!-- navbar -->
 
+            <script>
+                // clock code
+            function updateClock() {
+                const now = new Date();
+                const hours = now.getHours().toString().padStart(2, '0');
+                const minutes = now.getMinutes().toString().padStart(2, '0');
+                const timeString = `${hours}:${minutes}`;
+
+                document.getElementById('clock').textContent = timeString;
+            }
+
+            // Update clock every minute (60000ms = 1 minute)
+            setInterval(updateClock, 1000);
+            // Initial call to display clock immediately
+            updateClock();
+            // clock code
+            </script>
+
             <!-- landing -->
             <div class="lan">
                 <div class="lanwrap">
                     <div class="lanclock">
-                        <p>22:20</p>
+                        <p id="clock">22:20</p>
                     </div>
                     <div class="lanprofil">
                         <img src="images/profil.png" alt="">
