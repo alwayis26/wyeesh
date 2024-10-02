@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../images/icon.png">
+    <link rel="stylesheet" href="../../fontawesome/css/all.css">
+    <link rel="stylesheet" href="teknologi.css">
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <title>wyeesh</title>
+</head>
+<body>
+
+    <!-- container -->
+    <div class="con">
+        <div class="container">
+
+            <!-- navbar -->
+            <div class="nav">
+                <div class="navbarin">
+                    <div class="navbarflex">
+                        <a href="../../index.html">Beranda</a>
+                        <a href="../info/info.html">Info</a>
+                        <a href="../proyek/proyek.html">Proyek</a>
+                        <a href="teknologi.html">Teknologi</a>
+                    </div>
+                </div>
+            </div>
+            <!-- navbar -->
+
+            <div class="dig">
+                <div class="digheader">
+                    <h1>Teknologi</h1>
+                    <h2>Beberapa teknologi yang saya gunakan</h2>
+                </div>
+
+                <div class="digele">
+                    <div class="digleft">
+                        <p>Teknologi</p>
+                    </div>
+                    <div class="digright">
+                        <div class="digbox">
+                            <span>Backend</span>
+                            <h1>Javascript</h1>
+                            <img src="teknologi-images/js.svg" alt="">
+                        </div>
+                        <div class="digbox">
+                            <span>Desain</span>
+                            <h1>Figma</h1>
+                            <img src="teknologi-images/figma.svg" alt="">
+                        </div>
+                        <div class="digbox">
+                            <span>Backend</span>
+                            <h1>Php</h1>
+                            <img src="teknologi-images/php.svg" alt="">
+                        </div>
+                        <div class="digbox">
+                            <span>Struktur Web</span>
+                            <h1>Html</h1>
+                            <img src="teknologi-images/html.svg" alt="">
+                        </div>
+                        <div class="digbox">
+                            <span>Desain</span>
+                            <h1>Css</h1>
+                            <img src="teknologi-images/css.svg" alt="">
+                        </div>
+                        <div class="digbox">
+                            <span>Desain</span>
+                            <h1>Sass</h1>
+                            <img src="teknologi-images/sass.svg" alt="">
+                        </div>
+                        <div class="digbox">
+                            <span>Desain</span>
+                            <h1>Photoshop</h1>
+                            <img src="teknologi-images/photoshop.svg" alt="">
+                        </div>
+                        <div class="digbox">
+                            <span>Musik</span>
+                            <h1>Soundcloud</h1>
+                            <img src="teknologi-images/soundcloud.svg" alt="">
+                        </div>
+                        <div class="digbox">
+                            <span>Browser</span>
+                            <h1>Chrome</h1>
+                            <img src="teknologi-images/chrome.svg" alt="">
+                        </div>
+                        <div class="digbox">
+                            <span>Kode Editor</span>
+                            <h1>VSCode</h1>
+                            <img src="teknologi-images/vscode.svg" alt="">
+                        </div>
+                        <div class="digbox">
+                            <span>Sistem Operasi</span>
+                            <h1>Windows 10</h1>
+                            <img src="teknologi-images/windows.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="digsetup">
+                    <div class="digsetupleft">
+                        <p>Perangkat</p>
+                    </div>
+                    <div class="digsetupright">
+                        <div class="digsetupbox">
+                            <img src="teknologi-images/image.svg" alt="">
+                            <span>Komputer Pribadi</span>
+                            <h1>MSI Legion 110</h1>
+                        </div>
+                        <div class="digsetupimgflex">
+                            <div class="digsetupboxa">
+                                <img src="teknologi-images/phone.png" alt="">
+                                <span>Perangkat Mobile</span>
+                                <h1>Xiaomi Ultra Z7</h1>
+                            </div>
+                            <div class="digsetupboxb">
+                                <img src="teknologi-images/image-2.svg" alt="">
+                                <span>Pelantang Telinga</span>
+                                <h1>Carjack Razor HD 990</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class="fo">
+                <div class="fowrap">
+                    <span><i class="fa-regular fa-envelope"></i></span>
+                    <h1>Terima kasih sudah mampir, mari share ide terbaik!</h1>
+                    <p>wayiskarnis990@gmail.com</p>
+                    <div class="fososial">
+                        <a href=""><i class="fa-brands fa-linkedin" title="linkedln"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest" title="pinterest"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter" title="twitter/x"></i></a>
+                        <a href=""><i class="fa-brands fa-github" title="github"></i></a>
+                    </div>
+                    <h4>© 2024 | Website dibuat oleh Al Wayis Karnis</h4>
+                    <h3>Dengan ditemani secangkir kopi luwak 3gr gula</h3>
+                </div>
+            </div>
+            <!-- footer -->
+
+        </div>
+    </div>
+    <!-- container -->
+
+    <script>
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+        console.log(e)
+        })
+
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+
+        // fade in
+        window.addEventListener('load', () => {
+            document.body.classList.add('active');
+        });
+        // fade in
+    </script>
+
+</body>
+</html>

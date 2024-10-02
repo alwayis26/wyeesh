@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../images/icon.png">
+    <link rel="stylesheet" href="../../fontawesome/css/all.css">
+    <link rel="stylesheet" href="info.css">
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+    <title>wyeesh</title>
+</head>
+<body>
+
+    <!-- container -->
+    <div class="con">
+        <div class="container">
+
+            <!-- navbar -->
+            <div class="nav">
+                <div class="navbarin">
+                    <div class="navbarflex">
+                        <a href="../../index.html">Beranda</a>
+                        <a href="info.html">Info</a>
+                        <a href="../proyek/proyek.html">Proyek</a>
+                        <a href="../teknologi/teknologi.html">Teknologi</a>
+                    </div>
+                </div>
+            </div>
+            <!-- navbar -->
+
+            <div class="info">
+                <div class="infobanner">
+                    <img src="info-images/gradient-profil.svg" alt="" class="gradient">
+                    <img src="info-images/info-profil.svg" alt="" class="profil">
+                </div>
+
+                <div class="infohead">
+                    <div class="infoheada">
+                        <h1>Al Wayis Karnis</h1>
+                        <h2>User Interface Designer, Jawa Barat, Indonesia</h2>
+                    </div>
+                    <div class="infoheadb">
+                        <a href=""><i class="fa-brands fa-linkedin" title="linkedln"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest" title="pinterest"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter" title="twitter/x"></i></a>
+                        <a href=""><i class="fa-brands fa-github" title="github"></i></a>
+                    </div>
+                </div>
+
+                <div class="infocon">
+                    <div class="infocona">
+                        <div class="infoleft">
+                            <p>Pengenalan</p>
+                        </div>
+                        <div class="inforight">
+                            <p>Seperti yang sudah saya katakan pada laman Beranda tadi, saya adalah seorang <span class="bold">User Interface Designer</span> dari Bogor, Jawa Barat, Indonesia. Keahlian ini saya pelajari dari beragam platform, baik platform official seperti kelas online, dan platform otodidak seperti media jejaring video Youtube dan lain sebagainya.</p>
+                            <p>Dari skill yang saya pelajari ini saya harap dapat berkolaborasi sehingga menciptakan sebuah sistem yang dapat bermanfaat untuk banyak kalangan infividu.</p>
+                        </div>
+                    </div>
+                    <div class="infocona">
+                        <div class="infoleft">
+                            <p>Pengalaman</p>
+                        </div>
+                        <div class="inforight">
+                            <div class="inforightpanel">
+                                <div class="inforightpanelleft">
+                                    <p>2018 - Sekarang</p>
+                                </div>
+                                <div class="inforightpanelright">
+                                    <p>Startup LinkAja</p>
+                                    <span>Lorem ipsum, dolor sit Lorem ipsum dolor sit amet. amet consectetur adipisicing elit. Eius, perferendis!</span>
+                                </div>
+                            </div>
+                            <div class="inforightpanel">
+                                <div class="inforightpanelleft">
+                                    <p>2014 - 2017</p>
+                                </div>
+                                <div class="inforightpanelright">
+                                    <p>UNIQORA GitLab</p>
+                                    <span>Lorem ipsum, dolor sit Lorem ipsum dolor sit amet. amet consectetur adipisicing elit. Eius, perferendis!</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infocona">
+                        <div class="infoleft">
+                            <p>Pendidikan</p>
+                        </div>
+                        <div class="inforight">
+                            <div class="inforightpanel">
+                                <div class="inforightpanelleft">
+                                    <p>2019 - 2024</p>
+                                </div>
+                                <div class="inforightpanelright">
+                                    <p>Universitas Pamulang</p>
+                                </div>
+                            </div>
+                            <div class="inforightpanel">
+                                <div class="inforightpanelleft">
+                                    <p>2016 - 2019</p>
+                                </div>
+                                <div class="inforightpanelright">
+                                    <p>SMKN Tangerang 02</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class="fo">
+                <div class="fowrap">
+                    <span><i class="fa-regular fa-envelope"></i></span>
+                    <h1>Terima kasih sudah mampir, mari share ide terbaik!</h1>
+                    <p>wayiskarnis990@gmail.com</p>
+                    <div class="fososial">
+                        <a href=""><i class="fa-brands fa-linkedin" title="linkedln"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest" title="pinterest"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter" title="twitter/x"></i></a>
+                        <a href=""><i class="fa-brands fa-github" title="github"></i></a>
+                    </div>
+                    <h4>© 2024 | Website dibuat oleh Al Wayis Karnis</h4>
+                    <h3>Dengan ditemani secangkir kopi luwak 3gr gula</h3>
+                </div>
+            </div>
+            <!-- footer -->
+
+        </div>
+    </div>
+    <!-- container -->
+
+    <script>
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+        console.log(e)
+        })
+
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+
+        // fade in
+        window.addEventListener('load', () => {
+            document.body.classList.add('active');
+        });
+        // fade in
+    </script>
+
+</body>
+</html>
